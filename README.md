@@ -22,19 +22,34 @@ With **clone** you can:
 ## Getting Started
 
 1. Clone the repository to your local machine.
-2. Install the necessary packages using pip:
+
+2. Set up the .env file with the following keys:
+```
+DEBUG=# "True" or "False"
+SECRET_KEY=# Your secret key
+DATABASE_NAME=# Your database name
+DATABASE_USER=# Your database user name
+DATABASE_PASSWORD=# Your database password
+DATABASE_HOST=# Your database host
+DATABASE_PORT=# Your database port, most likely 5432
+```
+
+3. Install the necessary packages using pip:
 ```
 pip install -r requirements.txt
 ```
-3. Initialize the database:
+
+4. Initialize the database:
 ```
 python manage.py migrate
 ```
-4. Run the Django server:
+
+5. Run the Django server:
 ```
 python manage.py runserver
 ```
-5. Open your web browser and navigate to http://localhost:8000/.
+
+6. Open your web browser and navigate to http://localhost:8000/.
 
 ## License
 
